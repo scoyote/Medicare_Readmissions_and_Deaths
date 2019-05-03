@@ -6,6 +6,8 @@
  *   DESC:      Generated SAS Datastep Code
  *   TEMPLATE SOURCE:  (None Specified.)
  ***********************************************************************/
+data _null_; run;
+
     data demo.iris    ;
     %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
     infile 'C:\Users\sas\Documents\GitHub\Medicare_Readmissions_and_Deaths\iris.csv' delimiter = ',' MISSOVER DSD lrecl=32767 firstobs=2 ;
